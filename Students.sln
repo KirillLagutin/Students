@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Students.Model", "Students.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Students.DB_Lib", "Students.DB_Lib\Students.DB_Lib.csproj", "{4CB9A275-83EA-4786-9D2F-83F14A8420C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Students.App", "Students.App\Students.App.csproj", "{D8CEC1CF-E703-4D07-94BD-5ECB53951315}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{4CB9A275-83EA-4786-9D2F-83F14A8420C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CB9A275-83EA-4786-9D2F-83F14A8420C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CB9A275-83EA-4786-9D2F-83F14A8420C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8CEC1CF-E703-4D07-94BD-5ECB53951315}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8CEC1CF-E703-4D07-94BD-5ECB53951315}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8CEC1CF-E703-4D07-94BD-5ECB53951315}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8CEC1CF-E703-4D07-94BD-5ECB53951315}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
