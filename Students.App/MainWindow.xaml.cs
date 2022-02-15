@@ -1,17 +1,20 @@
 ﻿using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using Students.App.Components;
 using Students.Model;
 
 namespace Students.App
 {
     public partial class MainWindow : Window
     {
-        public Account Account { get; set; }
+        public Student Student { get; set; }
         public MainWindow(Account account)
         {
+            Student = account.Person.TabStudents.First(s => s.Person == account.Person);
+            
             InitializeComponent();
-
+            
             var role = account.TabAccountRoles.First().Role;
             switch (role.Name)
             {
@@ -25,11 +28,11 @@ namespace Students.App
                     SetTabItemSelected(TabItem_Admin, TabItem_Teacher, TabItem_Student);
                     break;
             }
-
         }
 
         private void SetTabItemSelected(TabItem active, params TabItem[] notActives)
         {
+            active.Content = new StudentUI(Student);
             TabControl_User.SelectedItem = active;
             foreach (var item in notActives)
             {
